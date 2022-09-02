@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("/static/img/weather_images/Thunder.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+
+.background_image {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+
+}
+
+.menubar{
+    width: 1200px;
+    height: 75px;
+    margin:auto;
+}
+
+.icon{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color:rgb(253, 98, 14);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    padding: 20px;
+    float: left;
+    padding: top 10px;
+}
+
+.navigation_bar{
+    width: 800px;
+    float: left;
+    height:70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 19px;
+}
+
+/* Container for all the list... */
+ul li a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    transition:0.4s ease-in-out;
+}
+
+/* ...*/
+ul li a:hover{
+    color:royalblue;
+}
+
+
+/* first text in the app...*/
+.text{
+    text-align: center;
+    color: white;
+}
+
+#text1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+}
+
+#text2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: white;
+}
+
+
+/* class for the form and button...*/
+.downloader{
+    width: 1200px;
+    float:none;
+    margin-left: 100px;
+}
+
+#url{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+    width: 471.91px;
+    height: 56px;
+    background: transparent;
+    border: 1px solid;
+    margin-top: 13px;
+    color:black;
+    border-right: none;
+    border-bottom-left-radius:5px;
+    border-top-left-radius: 5px;
+    padding:10px;
+}
+
+.btn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    width: 150px;
+    height: 56px;
+    background-color: rgb(116, 65, 65);
+    border: 2px solid;
+    color: black;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+}
+
+
+
+.text3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:25px;
+
+}
+
+.text4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.checking{
+    width: 100px;
+    float: left;
+    height:54px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    transition:0.4s ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(100, 127, 133);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  .checking:hover .dropdown-content {
+    display: block;
+  }
+
+   .forecast_data {
+    color: black;
+    font-family:algerian;
+    padding: 25px;
+    width: 40%;
+    margin: 0 auto;
+
+  }
+
+
+  }

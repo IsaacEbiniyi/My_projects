@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App/zip_code...</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'weather/style.css' %}">
+</head>
+    <body>
+        <div class="background_image">
+            <div class="menubar">
+                <div class="icon">
+                    <h1 class="logo">Weather Forecast Application</h1>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="navigation_bar">
+                    <ul>
+                        <li><a href="index">Search by City Name</a></li>
+                        <li><a href="home">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li> <a href="https://fdown.net/">Facebook Downloader</a></li>
+                        <div class="checking"><li>Websites</li>
+                            <div class="dropdown-content">
+                                <a href="#">YouTube downloader</a>
+                                <a href="mental">Mental Health</a>
+                                <a href="health">Healthy foods</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+                <br>
+                <br>
+                <br>
+            <div class="text">
+                <h1 id="text1"></h1>
+                <br>
+                <br>
+                <br>
+
+
+
+                <div class="downloader">
+                    <form  method="POST" action="" class="col-md">
+                        {% csrf_token %}
+                        <input id="url" type="text" name="zip" placeholder="Choose your city...">
+                        <button type="submit" class="btn" style="color: rgb(242, 192, 28);">Search</button>
+                    </form>
+
+                </div>
+                    <br>
+
+        </div>
+        <div class="forecast_data">
+            {% if data.country_code %}
+            <h1>{{city}}</h1>
+            <h4><span>Country Code :</span>{{data.country_code}} </h4>
+                <h4><span>Coordinates [X,Y] :</span> {{data.coordinate}}</h4>
+                <h4><span>Temperature in Celsius :</span>{{data.temp}} </h4>
+                <h4><span>Pressure :</span> {{data.pressure}} </h4>
+                <h4><span>Humidity : </span>{{data.humidity}} </h4>
+                <h4><span>Forecast : </span> {{data.main}} <img
+                    src= "http://openweathermap.org/img/w{{icons}}.png" alt="Image" style="width:70px"></h4>
+                <h4><span>Description : </span>{{data.description}}</h4>
+            {% endif %}
+        </div>
+    </body>
+
+</html>
